@@ -1,0 +1,31 @@
+:root {
+    --background: #FFFFFF;
+      --inputBackground: #F4F4F4;
+      --lightGray: #9B9B9B;
+      --darkGray: #585858;
+      --lightPurple: #E1CFF4;
+      --mediumPurple: #9C4BE2;
+      --black: #2D2D2D;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'PT Serif'; */
+  }
+  
+  /* ---- Breakpoints ----
+     'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+  
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+  
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+  
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+  
+      '2xl': '1536px', 
+  */

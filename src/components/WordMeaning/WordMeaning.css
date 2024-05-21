@@ -1,0 +1,58 @@
+.word-meaning-section{
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.adjective-and-line-break{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 24px;
+
+}
+.adjective-word{
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.horizontal-line{
+    width: 760px;
+    border-style: none;
+    background-color:  var(--lightGray);
+    height: 1px;
+}
+.meaning-text{
+    color: var(--lightGray);
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+ul{
+    margin-left: 24px;
+}
+li::marker{
+    color:var(--mediumPurple);
+}
+li{
+    color: var(--darkGray);
+    font-size: 16px;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 800px;
+}
+li:last-of-type{
+    margin-bottom: 40px;
+}
+.synonyms-sections{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 12px;
+    row-gap: 12px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 16px;
+}
+.synonyms-result{
+    color: var(--mediumPurple);
+}
