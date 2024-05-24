@@ -1,58 +1,52 @@
-.word-meaning-section{
-    width: 100%;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.adjective-and-line-break {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 24px;
 }
-.adjective-and-line-break{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    margin-bottom: 24px;
-
+.adjective-word {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 5px;
 }
-.adjective-word{
-    font-size: 20px;
-    font-style: italic;
-    margin-bottom: 5px;
+.horizontal-line {
+  width: 760px;
+  border-style: none;
+  background-color: var(--lightGray);
+  height: 1px;
 }
-.horizontal-line{
-    width: 760px;
-    border-style: none;
-    background-color:  var(--lightGray);
-    height: 1px;
+.meaning-text {
+  color: var(--lightGray);
+  font-size: 16px;
+  margin-bottom: 18px;
 }
-.meaning-text{
-    color: var(--lightGray);
-    font-size: 16px;
-    margin-bottom: 18px;
+ul {
+  margin-left: 24px;
 }
-ul{
-    margin-left: 24px;
+li::marker {
+  color: var(--mediumPurple);
 }
-li::marker{
-    color:var(--mediumPurple);
+.day-mode-list{
+  color: var(--darkGray);
+  font-size: 16px;
+  margin-bottom: 12px;
 }
-li{
-    color: var(--darkGray);
-    font-size: 16px;
-    margin-bottom: 12px;
-    width: 100%;
-    max-width: 800px;
+.night-mode-list{
+  color: var(--lightGray);
+  font-size: 16px;
+  margin-bottom: 12px;
 }
-li:last-of-type{
-    margin-bottom: 40px;
+li:last-of-type {
+  margin-bottom: 40px;
 }
-.synonyms-sections{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 12px;
-    row-gap: 12px;
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 16px;
+.synonyms-sections {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  column-gap: 8px;
+  margin-bottom: 16px;
 }
-.synonyms-result{
-    color: var(--mediumPurple);
+.synonyms-result {
+  color: var(--mediumPurple);
 }
