@@ -1,11 +1,13 @@
 .day-mode {
   padding: 24px;
   background-color: #ffffff;
+  min-height: 100%;
 }
 .night-mode {
   padding: 24px;
   background-color: black;
   color: #ffffff;
+  min-height: 100vh;
 }
 .serif {
   font-family: 'PT Serif';

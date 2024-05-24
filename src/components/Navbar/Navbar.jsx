@@ -24,7 +24,7 @@ const styleRefreshIconNightMode = {
   cursor: 'pointer',
 };
  
-const Navbar = ({closeFontOptions, isNightMode, changeBackground, refreshPage, setCurrentFont, setIsNightMode}) => {
+const Navbar = ({closeFontOptions, isNightMode, refreshPage, setCurrentFont, setIsNightMode}) => {
 
   const handleClick = (e) =>{
     e.preventDefault();
