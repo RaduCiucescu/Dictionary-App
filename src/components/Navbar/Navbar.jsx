@@ -32,28 +32,22 @@ const Navbar = ({closeFontOptions, isNightMode, refreshPage, setCurrentFont, set
     setCurrentFont(selectValue);
   }
 
+  const fonts =['serif', 'arial', 'roboto', 'mono'];
+
   const handleBackground = () => {isNightMode === true ? setIsNightMode(false) : setIsNightMode(true)}
 
   return (
-    <nav onClick={closeFontOptions} className="section-container nav-bar-container">
-      {isNightMode === false ? (
-        <CollectionsBookmarkOutlinedIcon
-          onClick={refreshPage}
-          style={styleRefreshIconDayMode}
-        />
-      ) : (
-        <CollectionsBookmarkOutlinedIcon
-          onClick={refreshPage}
-          style={styleRefreshIconNightMode}
-        />
-      )}
+    <nav onClick={closeFontOptions} className="section-container nav-bar-container">  
+      <CollectionsBookmarkOutlinedIcon 
+      onClick={refreshPage}
+      style={isNightMode ? 
+      styleRefreshIconNightMode : styleRefreshIconDayMode} />
       <div className="font-and-change-background-section-container">
         <div  className="select-font-container">
           <select onClick={handleClick} className={isNightMode === false ? "select-day-mode" : "select-night-mode"} name="font" id="font">
-            <option value="serif">Serif</option>
-            <option value="arial">Arial</option>
-            <option value="roboto">Roboto</option>
-            <option value="mono">Mono</option>
+            {fonts.map((option)=>(
+              <option style={{textTransform: 'capitalize'}} key={option} value={option}>{option} </option>
+            ))}
           </select>
           <div className="icon-container">
             <ExpandMoreOutlinedIcon  style={styleIconTwo}/>
@@ -67,14 +61,10 @@ const Navbar = ({closeFontOptions, isNightMode, refreshPage, setCurrentFont, set
             <ToggleOnIcon style={styleIconTwo} />
           )}
         </button>
-        {isNightMode === false ? (
-          <DarkModeOutlinedIcon style={styleIcon} />
-        ) : (
-          <DarkModeOutlinedIcon style={styleIconTwo} />
-        )}
-      </div>
-
-      
+        <DarkModeOutlinedIcon
+         style={ isNightMode
+          ? styleIconTwo : styleIcon} />
+      </div> 
     </nav>
   );
 };

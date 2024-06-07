@@ -10,53 +10,23 @@ const App = () => {
   const [isNightMode, setIsNightMode] = useState(false);
   const [currentFont, setCurrentFont] = useState('serif');
 
-  //   const nightMode = () =>{
-  //     if(isNightMode === false)
-  //     setIsNightMode(true)
-  //   }
-  //   const dayMode = () =>{
-  //     if(isNightMode === true)
-  //     setIsNightMode(false)
-  //   }
-  // const changeBackground = () =>{
-  //   setIsNightMode(nightMode);
-  //   setIsNightMode(dayMode);
-  //   }
-  // Intrebare? : cum este mai corect sau cum se face in practica? cum e comentat sau cum am facut mai jos?
 
-  const changeBackground = () => {
+  const toggleBackground = () => {
     setIsNightMode(!isNightMode);
   };
 
-  // const changeFont = () => {
-  //   setFontFamily(!fontFamily);
-  // };
- 
-  const refreshPage = (id) => {
-    const newPage = [...wordData];
-    newPage.splice(id,wordData.length);
-    setWordData(newPage);
+  const refreshPage = () => {
+    setWordData([]);
   };
- 
 
-  // const refreshPage = () => {
-  //   setWordData([]);
-  // };
-
-  // Intrebare: sunt bune variantele de mai sus pentru refresh? 
-  // nu am reusit sa se stearga si textul din input, desi cred ca ar trebui
-  // cel putin din punct de vedere UI.
-
-  
   return (
     <div 
       className={`${isNightMode === false ? 'day-mode' : 'night-mode'} font-${currentFont}`}
     >
       <Navbar 
-        changeBackground={changeBackground}
+        changeBackground={toggleBackground}
         isNightMode={isNightMode}
         setIsNightMode={setIsNightMode}
-        // changeFont={changeFont}
         refreshPage={refreshPage}
         setCurrentFont={setCurrentFont}
       />

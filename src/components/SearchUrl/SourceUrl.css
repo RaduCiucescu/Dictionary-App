@@ -6,19 +6,21 @@
 }
 p {
   color: var(--lightGray);
+  margin-bottom: 4px;
 }
 .source-url-link{
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  flex-direction: column; 
 }
 .day-mode-source-link{
   color: var(--darkGray);
   font-weight: 700;
   word-break: break-all;
+  margin-bottom: 8px;
 }
 .night-mode-source-link{
   color: var(--lightGray);
   font-weight: 700;
   word-break: break-all;
+  margin-bottom: 8px;
 }

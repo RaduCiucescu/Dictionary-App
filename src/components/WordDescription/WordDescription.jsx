@@ -22,7 +22,6 @@ const WordDescription = props => {
     audio.play();
     setPlaySound(true)
 
-
     audio.onended = () =>{
     setPlaySound(false);
     }

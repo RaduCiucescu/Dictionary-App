@@ -5,7 +5,6 @@ import './SourceUrl.css';
 const styleIcon = {
   color: 'var(--lightGray)',
   fontSize: ' 1rem',
-  marginLeft: '4px',
 };
 
 const SourceUrl = ({isNightMode, sourceUrls}) => {
@@ -18,9 +17,9 @@ const SourceUrl = ({isNightMode, sourceUrls}) => {
           {sourceUrls.map((sourceUrls)=>(
           <a className={isNightMode === false ? "day-mode-source-link" : "night-mode-source-link"} href={sourceUrls} target="_blank" key={sourceUrls}>
             {sourceUrls}
+            <OpenInNewIcon style={styleIcon} />
           </a>
           ))}
-      <OpenInNewIcon style={styleIcon} />
 
       </div>
     </div>

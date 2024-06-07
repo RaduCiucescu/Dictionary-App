@@ -29,6 +29,7 @@
   font-weight: 600;
   cursor: pointer;
   outline: none;
+  text-transform: capitalize;
 }
 .select-night-mode{
   border: none;
@@ -45,6 +46,7 @@
   font-weight: 600;
   cursor: pointer;
   outline: none;
+  text-transform: capitalize;
 }
 .icon-container{
   position: absolute;
